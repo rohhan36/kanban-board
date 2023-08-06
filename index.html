@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <title>Kanban Board</title>
+  </head>
+  <body>
+    <div class="backdrop">
+      <div class="new-task">
+        <div class="new-task-head">CREATE A NEW TASK</div>
+        <div class="new-task-inputs">
+          <div class="new-task-text-container">
+            <label for="new-task-text">Add task details :</label>
+            <textarea
+              name="new-task-text"
+              id="new-task-text"
+              class="new-task-text"
+              cols="30"
+              rows="10"></textarea>
+          </div>
+          <div class="new-task-priority">
+            <div>Select task priority :</div>
+            <div class="task-priority p1" data-priority="p1">Very Important</div>
+            <div class="task-priority p2" data-priority="p2">Important</div>
+            <div class="task-priority p3" data-priority="p3">Neutral</div>
+            <div class="task-priority p4" data-priority="p4">Can Do Later</div>
+          </div>
+          <div class="new-task-level">
+            <div>Add task to :</div>
+            <div class="task-level" data-level="todo">TODO</div>
+            <div class="task-level" data-level="in-progress">IN PROGRESS</div>
+            <div class="task-level" data-level="in-review">IN REVIEW</div>
+            <div class="task-level" data-level="done">DONE</div>
+          </div>
+          <div class="new-task-controles">
+            <button class="cancel secondary button">Cancel</button>
+            <button class="add-task primary button">Add Task</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <h3 id="title">Kanban Board</h3>
+      <button class="add-new-task-btn primary button">ADD NEW TASK</button>
+    </nav>
+    <main class="main-container">
+      <section class="task-section" id="todo">
+        <div class="section-head">
+          <div class="section-heading">TODO</div>
+          <div class="section-count">0</div>
+        </div>
+        <div class="task-list">
+          <div class="task">
+            <div class="text-content">
+              <div class="priority p4"></div>
+              <div class="task-text">Implement feedback collector and complete other work</div>
+            </div>
+            <div class="task-footer">
+              <div class="task-id">d4s5d45sd</div>
+              <div class="controles">
+                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
+                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="text-content">
+              <div class="priority p1"></div>
+              <div class="task-text">Implement feedback collector and complete other work</div>
+            </div>
+            <div class="task-footer">
+              <div class="task-id">d4s5d45sd</div>
+              <div class="controles">
+                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
+                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="text-content">
+              <div class="priority p1"></div>
+              <div class="task-text">Implement feedback collector and complete other work</div>
+            </div>
+            <div class="task-footer">
+              <div class="task-id">d4s5d45sd</div>
+              <div class="controles">
+                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
+                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="task">
+            <div class="text-content">
+              <div class="priority p2"></div>
+              <div class="task-text">Implement feedback collector and complete other work</div>
+            </div>
+            <div class="task-footer">
+              <div class="task-id">d4s5d45sd</div>
+              <div class="controles">
+                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
+                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="task">
+            <div class="text-content">
+              <div class="priority p3"></div>
+              <div class="task-text">Implement feedback collector and complete other work</div>
+            </div>
+            <div class="task-footer">
+              <div class="task-id">d4s5d45sd</div>
+              <div class="controles">
+                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
+                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="task-section" id="in-progress">
+        <div class="section-head">
+          <div class="section-heading">IN PROGRESS</div>
+          <div class="section-count">0</div>
+        </div>
+        <div class="task-list">
+          <div class="task">
+            <div class="text-content">
+              <div class="priority p1"></div>
+              <div class="task-text">Implement feedback collector and complete other work</div>
+            </div>
+            <div class="task-footer">
+              <div class="task-id">d4s5d45sd</div>
+              <div class="controles">
+                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
+                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="text-content">
+              <div class="priority p2"></div>
+              <div class="task-text">Implement feedback collector and complete other work</div>
+            </div>
+            <div class="task-footer">
+              <div class="task-id">d4s5d45sd</div>
+              <div class="controles">
+                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
+                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="task-section" id="in-review">
+        <div class="section-head">
+          <div class="section-heading">IN REVIEW</div>
+          <div class="section-count">0</div>
+        </div>
+        <div class="task-list"></div>
+      </section>
+
+      <section class="task-section" id="done">
+        <div class="section-head">
+          <div class="section-heading">DONE</div>
+          <div class="section-count">0</div>
+        </div>
+        <div class="task-list"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
