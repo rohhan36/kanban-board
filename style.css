@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -82,7 +84,7 @@ body {
 
 .section-head {
   display: flex;
-  padding: 20px;
+  padding: 10px 20px;
   gap: 10px;
   font-weight: 600;
   pointer-events: none;
@@ -91,15 +93,18 @@ body {
   color: white;
 }
 
-.section-count {
+.task-count {
   color: rgb(156, 156, 156);
 }
 
 .task-list {
+  border-top: #222831 solid 1px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  padding: 0px 5px;
-  gap: 10px;
+  padding: 10px 5px;
+  gap: 20px;
+  min-height: 40px;
 }
 
 .task {
@@ -109,23 +114,25 @@ body {
   background-color: var(--background);
   border-radius: 10px;
   color: rgb(233, 233, 233);
-  padding: 10px;
   font-size: smaller;
 
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.text-content {
-  display: flex;
-  overflow: hidden;
-  gap: 4px;
+.task-content {
+  padding: 10px;
+}
+
+.task-footer {
+  margin-top: 8px;
 }
 
 .priority {
-  width: 3px;
-  border-radius: 10px;
+  height: 3px;
+  width: 100%;
 }
 
 .p1 {
@@ -155,7 +162,7 @@ body {
 
 .backdrop {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -266,4 +273,14 @@ body {
   display: flex;
   justify-content: end;
   gap: 10px;
+}
+
+.drag-task {
+  color: #a8a8a8;
+  cursor: grab;
+}
+
+.delete-task,
+.edit-task {
+  cursor: pointer;
 }

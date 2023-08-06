@@ -41,7 +41,7 @@
           </div>
           <div class="new-task-controles">
             <button class="cancel secondary button">Cancel</button>
-            <button class="add-task primary button">Add Task</button>
+            <button class="add-task primary button">Submit</button>
           </div>
         </div>
       </div>
@@ -52,129 +52,34 @@
       <button class="add-new-task-btn primary button">ADD NEW TASK</button>
     </nav>
     <main class="main-container">
-      <section class="task-section" id="todo">
+      <section class="task-section" data-section="todo" id="todo">
         <div class="section-head">
           <div class="section-heading">TODO</div>
-          <div class="section-count">0</div>
-        </div>
-        <div class="task-list">
-          <div class="task">
-            <div class="text-content">
-              <div class="priority p4"></div>
-              <div class="task-text">Implement feedback collector and complete other work</div>
-            </div>
-            <div class="task-footer">
-              <div class="task-id">d4s5d45sd</div>
-              <div class="controles">
-                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
-                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
-              </div>
-            </div>
-          </div>
-          <div class="task">
-            <div class="text-content">
-              <div class="priority p1"></div>
-              <div class="task-text">Implement feedback collector and complete other work</div>
-            </div>
-            <div class="task-footer">
-              <div class="task-id">d4s5d45sd</div>
-              <div class="controles">
-                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
-                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
-              </div>
-            </div>
-          </div>
-          <div class="task">
-            <div class="text-content">
-              <div class="priority p1"></div>
-              <div class="task-text">Implement feedback collector and complete other work</div>
-            </div>
-            <div class="task-footer">
-              <div class="task-id">d4s5d45sd</div>
-              <div class="controles">
-                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
-                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="task">
-            <div class="text-content">
-              <div class="priority p2"></div>
-              <div class="task-text">Implement feedback collector and complete other work</div>
-            </div>
-            <div class="task-footer">
-              <div class="task-id">d4s5d45sd</div>
-              <div class="controles">
-                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
-                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="task">
-            <div class="text-content">
-              <div class="priority p3"></div>
-              <div class="task-text">Implement feedback collector and complete other work</div>
-            </div>
-            <div class="task-footer">
-              <div class="task-id">d4s5d45sd</div>
-              <div class="controles">
-                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
-                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="task-section" id="in-progress">
-        <div class="section-head">
-          <div class="section-heading">IN PROGRESS</div>
-          <div class="section-count">0</div>
-        </div>
-        <div class="task-list">
-          <div class="task">
-            <div class="text-content">
-              <div class="priority p1"></div>
-              <div class="task-text">Implement feedback collector and complete other work</div>
-            </div>
-            <div class="task-footer">
-              <div class="task-id">d4s5d45sd</div>
-              <div class="controles">
-                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
-                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
-              </div>
-            </div>
-          </div>
-          <div class="task">
-            <div class="text-content">
-              <div class="priority p2"></div>
-              <div class="task-text">Implement feedback collector and complete other work</div>
-            </div>
-            <div class="task-footer">
-              <div class="task-id">d4s5d45sd</div>
-              <div class="controles">
-                <span class="edit-task"><i class="bi bi-pencil-square"></i></span>
-                <span class="delete-task"><i class="bi bi-trash-fill"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="task-section" id="in-review">
-        <div class="section-head">
-          <div class="section-heading">IN REVIEW</div>
-          <div class="section-count">0</div>
+          <div class="task-count">0</div>
         </div>
         <div class="task-list"></div>
       </section>
 
-      <section class="task-section" id="done">
+      <section class="task-section" data-section="in-progress" id="in-progress">
+        <div class="section-head">
+          <div class="section-heading">IN PROGRESS</div>
+          <div class="task-count">0</div>
+        </div>
+        <div class="task-list"></div>
+      </section>
+
+      <section class="task-section" data-section="in-review" id="in-review">
+        <div class="section-head">
+          <div class="section-heading">IN REVIEW</div>
+          <div class="task-count">0</div>
+        </div>
+        <div class="task-list"></div>
+      </section>
+
+      <section class="task-section" data-section="done" id="done">
         <div class="section-head">
           <div class="section-heading">DONE</div>
-          <div class="section-count">0</div>
+          <div class="task-count">0</div>
         </div>
         <div class="task-list"></div>
       </section>
