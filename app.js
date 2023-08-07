@@ -261,6 +261,7 @@ mainContainer.addEventListener("drop", (e) => {
   currSelected.taskLevel = currSection;
 
   localStorage.setItem("task-data", JSON.stringify(data));
+  renderTaskData();
 });
 
 mainContainer.addEventListener("dragover", (e) => {
